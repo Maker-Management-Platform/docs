@@ -39,7 +39,7 @@ services:
 
   ui:
     image: ghcr.io/maker-management-platform/mmp-ui:nightly
-    container_name: agent
+    container_name: ui
     ports:
       - 8080:8080
     environment:
