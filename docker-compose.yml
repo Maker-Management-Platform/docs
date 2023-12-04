@@ -1,20 +1,3 @@
-# Maker Management Platform
-
-Maker Management Platform, or mmp, aims to simplify and unify the management of a variety of digital assets related to 3d printing and manufactoring, laser engraving and such.
-
-### Disclaimer
-Under development
-
-## Discussion
-![Discord Shield](https://discordapp.com/api/guilds/1013417395777450034/widget.png?style=shield)
-
-Join discord if you need any support https://discord.gg/SqxKE3Ve4Z
-
-
-## Runing mmp local
-
-docker-compose.yml
-``` yaml
 ---
 version: "3.6"
 services:
@@ -32,6 +15,7 @@ services:
       #- "MODEL_RENDER_COLOR=#167DF0"
       #- "MODEL_BACKGROUND_COLOR=#FFFFFF"
       #- "LOG_PATH=./log" # If you wish to log to a file
+
     restart: unless-stopped
 
   ui:
@@ -43,4 +27,3 @@ services:
       - "AGENT_ADDRESS=agent:8000" #local address for the agent
     restart: unless-stopped
 
-```
