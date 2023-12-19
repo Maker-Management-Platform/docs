@@ -7,6 +7,8 @@ services:
     volumes:
       - ./library:/library
       - ./config.toml:/app/config.toml
+    ports:
+      - 8000:8000 # currently required for your slicer integration, looking for a workaround
     environment:
       - "THINGIVERSE_TOKEN=" # needed for the thingiverse download feature
       #- "PORT=8000"
@@ -15,7 +17,6 @@ services:
       #- "MODEL_RENDER_COLOR=#167DF0"
       #- "MODEL_BACKGROUND_COLOR=#FFFFFF"
       #- "LOG_PATH=./log" # If you wish to log to a file
-
     restart: unless-stopped
 
   ui:
@@ -26,4 +27,3 @@ services:
     environment:
       - "AGENT_ADDRESS=agent:8000" #local address for the agent
     restart: unless-stopped
-
