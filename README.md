@@ -1,22 +1,22 @@
 # Maker Management Platform
 
-Maker Management Platform, or mmp, aims to simplify and unify the management of a variety of digital assets related to 3d printing and manufactoring, laser engraving and such.
+Maker Management Platform, or mmp, aims to simplify and unify the management of a variety of digital assets related to 3d printing, manufactoring, laser engraving and such.
 
 ### Disclaimer
 Insecure, use locally only.
 
-Under development so thing might break, please contact us via issue or on discord.
+Under development so things might break, please contact us via issue or on discord.
 
 #### Create and manage projects
 ![Projects](/assets/projects.png)
 #### Projects are a collection of assets like models, images, slice files and documents
 ![Projects](/assets/assets.png)
-#### You can preview multiple models at the time and see how they fit together
+#### You can preview multiple models at the same time and see how they fit together
 ![Projects](/assets/model_preview.png)
 #### Send your slices directly to your printer
 ![Projects](/assets/printers.png)
 ![Projects](/assets/slices_send_to_printer.png)
-#### Interate with your slicer
+#### Integrate with your slicer
 ![Projects](/assets/slicer_integration.png)
 
 
