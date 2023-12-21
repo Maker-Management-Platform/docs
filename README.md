@@ -61,3 +61,11 @@ services:
     restart: unless-stopped
 
 ```
+
+## Thingiverse token
+
+To get a Thingiverse token go to [Apps](https://www.thingiverse.com/apps/create) > Create an App
+
+Select "Web App" fill in any name & description, accept the policy, and click on "Create & Get App Key" at the top of the page.
+
+Use the "App Token" for the `THINGIVERSE_TOKEN` environment.
