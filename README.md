@@ -34,7 +34,7 @@ docker-compose.yml
 version: "3.6"
 services:
   agent:
-    image: ghcr.io/maker-management-platform/agent:rebuild
+    image: ghcr.io/maker-management-platform/agent:latest
     container_name: agent
     volumes:
       - ./library:/library
@@ -52,7 +52,7 @@ services:
     restart: unless-stopped
 
   ui:
-    image: ghcr.io/maker-management-platform/mmp-ui:master
+    image: ghcr.io/maker-management-platform/mmp-ui:latest
     container_name: ui
     ports:
       - 8081:8081
