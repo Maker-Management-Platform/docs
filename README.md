@@ -18,7 +18,10 @@ Under development so things might break, please contact us via issue or on disco
 ![Projects](/assets/slices_send_to_printer.png)
 #### Integrate with your slicer
 ![Projects](/assets/slicer_integration.png)
+#### Import projects from public platforms
+By using [MMP Companion browser extension](https://github.com/Maker-Management-Platform/mmp-companion) you can import projects from multiple public platforms
 
+This feature is also available in MMP UI but limited to thingiverse (see MMP companion for more details)
 
 
 ## Discussion
