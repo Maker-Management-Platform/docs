@@ -24,10 +24,16 @@ By using [MMP Companion browser extension](https://github.com/Maker-Management-P
 This feature is also available in MMP UI but limited to thingiverse (see MMP companion for more details)
 
 
-## Discussion
-![Discord Shield](https://discordapp.com/api/guilds/1013417395777450034/widget.png?style=shield)
+## Support and Discussion
+If you find any problems or want to request a feature please open an issue in the related project:
+- UI related issues: [Here](https://github.com/Maker-Management-Platform/mmp-ui/issues)
+- Backend related issues: [Here](https://github.com/Maker-Management-Platform/agent/issues)
+- Companion (extension) related issues: [Here](https://github.com/Maker-Management-Platform/mmp-companion/issues)
+- Documentation / typos related issues: [Here](https://github.com/Maker-Management-Platform/docs/issues)
 
-Join discord if you need any support https://discord.gg/SqxKE3Ve4Z
+If you have any doubts or do you wanna chat about it join us on [Discord](https://discord.gg/SqxKE3Ve4Z)
+
+![Discord Shield](https://discordapp.com/api/guilds/1013417395777450034/widget.png?style=shield)
 
 ## Runing mmp locally
 
