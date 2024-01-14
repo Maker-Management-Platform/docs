@@ -3,8 +3,7 @@
 Maker Management Platform, or mmp, aims to simplify and unify the management of a variety of digital assets related to 3d printing, manufactoring, laser engraving and such.
 
 ### Disclaimer
-Insecure, use locally only.
-
+Insecure, use locally only.  
 Under development so things might break, please contact us via issue or on discord.
 
 #### Create and manage projects
@@ -19,8 +18,7 @@ Under development so things might break, please contact us via issue or on disco
 #### Integrate with your slicer
 ![Projects](/assets/slicer_integration.png)
 #### Import projects from public platforms
-By using [MMP Companion browser extension](https://github.com/Maker-Management-Platform/mmp-companion) you can import projects from multiple public platforms
-
+By using [MMP Companion browser extension](https://github.com/Maker-Management-Platform/mmp-companion) you can import projects from multiple public platforms.  
 This feature is also available in MMP UI but limited to thingiverse (see MMP companion for more details)
 
 
@@ -74,27 +72,17 @@ services:
 ## FAQs
 
 ### How do I create a Thingiverse token?
-
-To get a Thingiverse token go to [Apps](https://www.thingiverse.com/apps/create) > Create an App
-
-Select "Web App" fill in any name & description, accept the policy, and click on "Create & Get App Key" at the top of the page.
-
+To get a Thingiverse token go to [Apps](https://www.thingiverse.com/apps/create) > Create an App  
+Select "Web App" fill in any name & description, accept the policy, and click on "Create & Get App Key" at the top of the page.  
 Use the "App Token" for the `THINGIVERSE_TOKEN` environment.
 
 
 ### How to I import my huge collection to the platform?
-
-Just mount your collection root folder in the `/library` volume, MMP runs a discovery routine on start up and will create projects based on your directory structure.
-
-The name of the directory that contains your assets will be the project name and the name of all the folders in the path will become tags to ease your search.
-
+Just mount your collection root folder in the `/library` volume, MMP runs a discovery routine on start up and will create projects based on your directory structure.  
+The name of the directory that contains your assets will be the project name and the name of all the folders in the path will become tags to ease your search.  
 Other details like the description or links will need to be added manually through the UI
 
-
 ### How do I reset my library if anything goes wrong or I wish to uninstall?
-
-This process is irreversible and will delete all the mmp related data, leaving your library untouched.
-
-You can reset all the information stored by deleting all the `.project.stlib` files, you can use the following command `find . -name ".project.stlib" -type f -delete`
-
+This process is irreversible and will delete all the mmp related data, leaving your library untouched.  
+You can reset all the information stored by deleting all the `.project.stlib` files, you can use the following command `find . -name ".project.stlib" -type f -delete`  
 You can also delete all generated gcode thumbnails by running `find . -name "*.thumb.png" -type f -delete` and all the stl renders with `find . -name "*.render.png" -type f -delete`
