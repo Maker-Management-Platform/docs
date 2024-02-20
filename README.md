@@ -40,18 +40,10 @@ services:
     image: ghcr.io/maker-management-platform/agent:latest
     container_name: agent
     volumes:
-      - ./library:/library
-      - ./config.toml:/app/config.toml
+      - ./library:/library # should contain your project library
+      - ./data:/data # will contain config and state files
     ports:
       - 8000:8000 # currently required for your slicer integration, looking for a workaround
-    environment:
-      - "THINGIVERSE_TOKEN=" # needed for the thingiverse download feature
-      #- "PORT=8000"
-      #- "LIBRARY_PATH=/library"
-      #- "MAX_RENDER_WORKERS=5"
-      #- "MODEL_RENDER_COLOR=#167DF0"
-      #- "MODEL_BACKGROUND_COLOR=#FFFFFF"
-      #- "LOG_PATH=./log" # If you wish to log to a file
     restart: unless-stopped
 
   ui:
@@ -64,13 +56,14 @@ services:
     restart: unless-stopped
 
 ```
+#### warning: this version breaks the previous configuration, you should backup your values and reinsert them in the UI
 
 ## FAQs
 
 ### How do I create a Thingiverse token?
 To get a Thingiverse token go to [Apps](https://www.thingiverse.com/apps/create) > Create an App  
 Select "Web App" fill in any name & description, accept the policy, and click on "Create & Get App Key" at the top of the page.  
-Use the "App Token" for the `THINGIVERSE_TOKEN` environment.
+Use the "App Token" for the `integrations -> thingiverse -> token` setting.
 
 
 ### How to I import my huge collection to the platform?
@@ -82,3 +75,7 @@ Other details like the description or links will need to be added manually throu
 This process is irreversible and will delete all the mmp related data, leaving your library untouched.  
 You can reset all the information stored by deleting all the `.project.stlib` files, you can use the following command `find . -name ".project.stlib" -type f -delete`  
 You can also delete all generated gcode thumbnails by running `find . -name "*.thumb.png" -type f -delete` and all the stl renders with `find . -name "*.render.png" -type f -delete`
+
+### How can I contribute?
+If you want to contribute with a bug fix for the current version use the `latest` branch  
+If you want to contribute for a future release use the `master` or `main` branch  
