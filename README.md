@@ -8,6 +8,12 @@ Under development so things might break, please contact us via issue or on disco
 
 ### Check out this small demo
 [![Watch the video](https://img.youtube.com/vi/10bNQj1ux8Y/default.jpg)](https://youtu.be/10bNQj1ux8Y)
+#### Create and manage projects
+![Projects](/assets/projects.png)
+#### Projects are a collection of assets like models, images, slice files and documents
+![Projects](/assets/assets.png)
+#### You can preview multiple models at the same time and see how they fit together
+![Projects](/assets/model_preview.png)
 #### Send your slices directly to your printer
 ![Projects](/assets/printers.png)
 ![Projects](/assets/slices_send_to_printer.png)

@@ -6,7 +6,7 @@ services:
     container_name: agent
     volumes:
       - ./library:/library
-      - ./data:/app/data
+      - ./data:/data
     ports:
       - 8000:8000 # currently required for your slicer integration, looking for a workaround
     restart: unless-stopped
