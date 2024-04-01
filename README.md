@@ -62,7 +62,15 @@ services:
     restart: unless-stopped
 
 ```
-#### warning: this version breaks the previous configuration, you should backup your values and reinsert them in the UI
+  ## Breaking changes
+  - v1.3 - now all the generated assets are created in a data/assets folder (https://github.com/Maker-Management-Platform/mmp-ui/issues/127).  
+  After the first run the new version and ensure everything is ok you can delete all the .project.stlib files and generated assets from the library folder. Example commands ( run at you own risk)
+  ```
+    cd <your lib path>
+    find . -name ".project.stlib" -type f -delete
+    find . -name "*.thumb.*" -type f -delete
+    find . -name "*.render.*" -type f -delete
+  ```
 
 ## FAQs
 

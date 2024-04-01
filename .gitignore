@@ -1,2 +1,4 @@
 library
 config.toml
+data/assets
+data/data.db
