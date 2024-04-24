@@ -1,6 +1,6 @@
 # Maker Management Platform
 
-Maker Management Platform, or mmp, aims to simplify and unify the management of a variety of digital assets related to 3d printing, manufactoring, laser engraving and such.
+Maker Management Platform, or mmp, aims to simplify and unify the management of a variety of digital assets related to 3d printing, manufacturing, laser engraving and such.
 
 ### Disclaimer
 Insecure, use locally only. 
