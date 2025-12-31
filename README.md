@@ -1,3 +1,10 @@
+[!IMPORTANT]
+**Project Status: Seeking Successor**
+MMP will be archived on **Jan 31, 2026** unless a new maintainer takes the lead. I am available for video onboarding sessions to help you get started with the Go/React architecture.
+Reach out: **eduardoliveira2009[at]g m a i l.com**
+
+If you are looking for active alternatives, please explore [Orynt3D](https://www.orynt3d.com/) or [Manyfold](https://manyfold.app/).
+
 # Maker Management Platform
 
 Maker Management Platform, or MMP, aims to simplify and unify the management of a variety of digital assets related to 3d printing, manufacturing, laser engraving and such.
